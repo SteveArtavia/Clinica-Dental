@@ -1,0 +1,95 @@
+:root{
+    --azulClaro:#E3F2FD;
+    --azulOscuro:#9bddfc;
+    --grisClaro:#F4F4F4;
+    --grisMedio:#B0B0B0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    margin: 3.75em 0;
+}
+
+/* NAVBAR */
+header{
+    background: var(--grisClaro);
+    padding: 3em;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav p{
+    margin-bottom: 0;
+}
+header nav ul{
+    display: flex;
+    gap: 3em;
+    margin-bottom: 0;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    color: var(--azulOscuro);
+}
+#btn-cita{
+    background-color: var(--azulOscuro);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+}
+
+/* HERO */
+#hero .row{
+    gap: 3em;
+}
+
+/* SERVICIOS */
+#servicios .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+#servicios .row .card{
+    padding: 0;
+}
+#servicios .row .card-body{
+    padding: 2.5em;
+}
+
+/* SOBRE NOSOTROS */
+#sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MOBILE SCREEN */
+@media screen and (max-width:576px){
+
+}
+
+
+.placeholder-img {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: auto; 
+    display: block;
+    min-height: 200px; 
+    object-fit: cover;
+  }
