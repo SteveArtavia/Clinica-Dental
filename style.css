@@ -1,6 +1,6 @@
 :root{
     --azulClaro:#E3F2FD;
-    --azulOscuro:#9bddfc;
+    --azulOscuro:#8dd8fb;
     --grisClaro:#F4F4F4;
     --grisMedio:#B0B0B0;
 }
@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -76,6 +79,27 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#sobre-nosotros .row{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#ubicacion a{
+    background-color: var(--azulOscuro);
+    padding: 1em;
+    max-width: 200px;
+    margin-bottom: 1em !important;
+    border-radius: 1em;
+    margin: 0;
+    text-decoration: none;
+    color: white;
 }
 
 /* MOBILE SCREEN */
