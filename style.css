@@ -131,6 +131,14 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+#reservar .row .card{
+    padding: 4em;
+    border-radius: 1em;
+    background: linear-gradient(135deg, #1F69B2 0%, #6AB3F2 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px 0 #efefef;
+}
 
 footer{
     justify-content: center;
