@@ -14,30 +14,33 @@
 </head>
 <body>
     <header>
-        <nav id=nav>
-            <p id="logo">LOGO</p>
+        <nav id='nav'>
+            <p id="logo"><strong>LOGO</strong></p>
             <ul id="nav-list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#" id="btn-cita">Solicitar Cita</a></li>
+                <li><a href="#" class="main-btn">Solicitar Cita</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero" class="container">
-       <div class="row">
-            <img src="" alt="Imagen" class="col img-fluid placeholder-img">
-            <div class="col">
-                <h1>Bienvenido a la pagina de la clinica</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quisquam iusto rerum ab laborum perspiciatis incidunt odio illum accusamus aut. In laudantium esse omnis tempora similique provident reiciendis labore asperiores?</p>
+    <section id="hero">
+       <div class="container">
+            <div class="row mx-auto">
+                <div class="col-10 mx-auto">
+                    <h1>Sonríe con confianza</h1>
+                    <h5>Atención dental de primer nivel para toda la familia</h5>
+                    <p>En Clínica Dental Familiar, nos dedicamos a brindarte un cuidado dental completo. Desde limpiezas regulares hasta tratamientos especializados, nuestro equipo está comprometido a mantener tu sonrisa saludable y radiante.</p>
+                    <button class="light-btn mt-3">Agendar cita</button>
+                </div>
             </div>
        </div>
     </section>
 
     <section id="servicios" class="container">
-        <h4 class="my-5 text-center">Servicios</h4>
         <div class="row">
+            <h2 class="text-center">Conoce nuestros servicios</h2>
             <div class="card col-12 col-lg-3">
                 <img src="" alt="" class="placeholder-img">
                 <div class="card-body">
@@ -63,13 +66,13 @@
     </section>
 
     <section id="sobre-nosotros" class="container">
-        <h4 class="my-5">Sobre Nosotros</h4>
         <div class="row">
-            <div class="col-9 mb-5">
+            <h2 class="my-5 text-center">Sobre Nosotros</h2>
+            <div class="col-10 mb-5">
                 <h3>Mision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis voluptatem delectus eaque magnam ab, voluptates, debitis doloremque sed perferendis blanditiis quod quam inventore iste dolorum! Nihil consectetur nemo cum!</p>
             </div>
-            <div class="col-9">
+            <div class="col-10">
                 <h3>Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis voluptatem delectus eaque magnam ab, voluptates, debitis doloremque sed perferendis blanditiis quod quam inventore iste dolorum! Nihil consectetur nemo cum!</p>
             </div>
@@ -78,40 +81,40 @@
 
     <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 my-3">
-              <h5>Contacto</h5>
-              <a href="tel:+50689545745"><i class="fas fa-phone"></i> 8835 3224</a><br>
-              <a href="mailto:dramartinez28@hotmail.com"><i class="fas fa-envelope"></i> dramartinez28@hotmail.com</a><br>
-              <a href="https://wa.me/1234567890?text=Hola%20quiero%20más%20información" class="whatsapp-button" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a><br>
-            </div>
-      
-            <div class="col-md-4 my-3">
-              <h5>Horario de Atención</h5>
-              <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
-              <p>Sábado y Domingo: Cerrado</p>
-            </div>
-      
-            <div class="col-md-4 my-3">
-              <h5>Enlaces Útiles</h5>
-              <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Reserva de Citas</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </div>
+            <div class="row mx-auto">
 
-            <div id="ubicacion" class="row mx-auto text-center">
-            <a href="https://www.waze.com/en/live-map/directions?latlng=9.9897414%2C-84.1405879" class="target="_blank"> Ir ahora</a><br>
-            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=9.989741&lon=-84.140588&ct=livemap" width="335" height="300" allowfullscreen></iframe>
+                <div class="col-12 col-lg-3 my-3"><strong>LOGO</strong></div>
+
+                <div class="col-12 col-lg-3 my-3">
+                <h5>Contacto</h5>
+                <a href="tel:+50689545745"><i class="fas fa-phone"></i> 8835 3224</a><br>
+                <a href="mailto:dramartinez28@hotmail.com"><i class="fas fa-envelope"></i> dramartinez28@hotmail.com</a><br>
+                <a href="https://wa.me/1234567890?text=Hola%20quiero%20más%20información" class="whatsapp-button" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a><br>
+                </div>
+        
+                <div class="col-12 col-lg-3 my-3">
+                <h5>Horario de Atención</h5>
+                <p class="m-0">Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábado y Domingo: Cerrado</p>
+                </div>
+        
+                <div id="enlaces" class="col-12 col-lg-3 my-3">
+                <h5>Enlaces Útiles</h5>
+                    <a href="#">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#sobre-nosotros">Sobre Nosotros</a>
+                    <a href="#">Reserva de Citas</a>
+                    <a href="#footer">Contacto</a>
+                </div>
+
+                <div id="ubicacion" class="text-center my-5">
+                    <a href="https://www.waze.com/en/live-map/directions?latlng=9.9897414%2C-84.1405879" class="light-btn" target="_blank">Ir con waze</a><br>
+                </div>
+        
+                <div class="text-center mt-4">
+                    <p>&copy; 2024 Clínica Dental Familiar. Todos los derechos reservados.</p>
+                </div>
             </div>
-          </div>
-      
-          <div class="text-center mt-4">
-            <p>&copy; 2024 Clínica Dental Familiar. Todos los derechos reservados.</p>
-          </div>
         </div>
       </footer>
       

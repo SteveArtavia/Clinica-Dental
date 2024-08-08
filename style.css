@@ -1,8 +1,9 @@
 :root{
     --azulClaro:#E3F2FD;
-    --azulOscuro:#8dd8fb;
+    --azulOscuro:#1F69B2;
+    --azulHover: #1a5997;
     --grisClaro:#F4F4F4;
-    --grisMedio:#B0B0B0;
+    --grisMedio:#B2B2B2;
 }
 *{
     margin: 0;
@@ -18,11 +19,51 @@ body{
 section{
     margin: 3.75em 0;
 }
+h1{
+    font-size: 3.5em;
+    margin-bottom: 0.4em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h5{
+    font-weight: 600;
+}
+.main-btn{
+    background: linear-gradient(135deg, #1F69B2 0%, #004D7A 100%);
+    padding: 1em 1.5em;
+    border-radius: 10em;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px 0 #efefef;
+}
+.light-btn{
+    background-color: white;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 10em;
+    color: var(--azulOscuro);
+    font-weight: bold;
+    box-shadow: 0 0 10px 0 var(--azulHover);
+}
+.light-btn:hover{
+    background-color: var(--grisClaro);
+}
+.main-btn:hover{
+    color: white;
+    background: linear-gradient(135deg, #1F69B2 0%, #4A90E2 100%);
+}
 
 /* NAVBAR */
 header{
     background: var(--grisClaro);
     padding: 3em;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 header nav{
     display: flex;
@@ -47,16 +88,16 @@ header nav ul li a{
 header nav ul li a:hover{
     color: var(--azulOscuro);
 }
-#btn-cita{
-    background-color: var(--azulOscuro);
-    padding: 1em;
-    border-radius: 1em;
-    color: white;
-}
 
 /* HERO */
-#hero .row{
-    gap: 3em;
+#hero{
+    background-image: url(/img/hero.webp);
+    background-size: cover;
+    object-fit: cover;
+    color: white;
+    margin: 0;
+    padding: 6em;
+    padding-top: 13em;
 }
 
 /* SERVICIOS */
@@ -68,6 +109,12 @@ header nav ul li a:hover{
 }
 #servicios .row .card{
     padding: 0;
+    border: 1px solid var(--grisClaro);
+    box-shadow: 0 0 10px 0 var(--grisClaro);
+    border-radius: 1em;
+}
+#servicios .row .card img{
+    border-radius: 1em 1em 0 0;
 }
 #servicios .row .card-body{
     padding: 2.5em;
@@ -83,23 +130,33 @@ header nav ul li a:hover{
 #sobre-nosotros .row{
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 footer{
     justify-content: center;
     align-items: center;
     margin: auto;
-}
-#ubicacion a{
     background-color: var(--azulOscuro);
-    padding: 1em;
-    max-width: 200px;
-    margin-bottom: 1em !important;
-    border-radius: 1em;
-    margin: 0;
+    padding: 6em;
+    color: white;
+}
+footer div a{
     text-decoration: none;
     color: white;
+}
+footer div a:hover{
+    color: var(--grisMedio);
+}
+#enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+#ubicacion a{
+    text-decoration: none;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding: 1em 4em;
 }
 
 /* MOBILE SCREEN */
@@ -110,7 +167,7 @@ footer{
 
 .placeholder-img {
     background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    border: none;
     width: 100%;
     height: auto; 
     display: block;
