@@ -132,7 +132,15 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 6em;
+}
+#sobre-nosotros h2{
+    color: var(--grisMedio);
+}
+#sobre-nosotros h3{
+    font-weight: bold;
+    color: var(--azulOscuro);
 }
 #sobre-nosotros .row{
     justify-content: center;
@@ -192,6 +200,9 @@ footer div a:hover{
         display: block !important;
         color: var(--azulOscuro);
         font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
     }
 
     #hero{
