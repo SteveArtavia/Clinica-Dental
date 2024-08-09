@@ -76,6 +76,7 @@ header nav p{
     margin-bottom: 0;
 }
 header nav ul{
+    align-items: center;
     display: flex;
     gap: 3em;
     margin-bottom: 0;
@@ -197,6 +198,10 @@ footer div a:hover{
         font-size: 1em;
     }
 
+    #reservar .card{
+        padding: 4em 1em !important;
+    }
+
     footer{
         padding: 1em;
         padding-top: 3em;
@@ -206,14 +211,3 @@ footer div a:hover{
         margin-top: 3em;
     }
 }
-
-
-.placeholder-img {
-    background-color: #f0f0f0;
-    border: none;
-    width: 100%;
-    height: auto; 
-    display: block;
-    min-height: 200px; 
-    object-fit: cover;
-  }
