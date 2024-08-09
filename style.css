@@ -62,7 +62,7 @@ h5{
 /* NAVBAR */
 header{
     background: var(--grisClaro);
-    padding: 3em;
+    padding: 1.5em 3em;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -99,8 +99,11 @@ header nav ul li a:hover{
     object-fit: cover;
     color: white;
     margin: 0;
-    padding: 6em;
-    padding-top: 13em;
+    padding: 20em;
+    padding-top: 20em;
+}
+#hero h1{
+    font-size: 6em;
 }
 
 /* SERVICIOS */
@@ -129,11 +132,17 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6em;
 }
 #sobre-nosotros .row{
     justify-content: center;
     align-items: center;
 }
+
+ /* RESERVAR */
+#reservar{
+    padding-bottom: 4em;
+ }
 #reservar .row .card{
     padding: 4em;
     border-radius: 1em;
@@ -142,7 +151,7 @@ header nav ul li a:hover{
     border: none;
     box-shadow: 0 0 10px 0 #efefef;
 }
-
+/* FOOTER */
 footer{
     justify-content: center;
     align-items: center;
@@ -209,5 +218,12 @@ footer div a:hover{
     }
     #ubicacion a{
         margin-top: 3em;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (max-width:1400px){
+    #hero{
+        padding: 16em 1em;
     }
 }
