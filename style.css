@@ -33,6 +33,7 @@ h5{
     font-weight: 600;
 }
 .main-btn{
+    display: inline-block;
     background: linear-gradient(135deg, #1F69B2 0%, #004D7A 100%);
     padding: 1em 1.5em;
     border-radius: 10em;
@@ -41,6 +42,7 @@ h5{
     box-shadow: 0 0 10px 0 #efefef;
 }
 .light-btn{
+    display: inline-block;
     background-color: white;
     padding: 1em 1.5em;
     border: none;
@@ -170,6 +172,39 @@ footer div a:hover{
 /* MOBILE SCREEN */
 @media screen and (max-width:576px){
 
+    header{
+        padding: 1.5em;
+    }
+    header #nav-list{
+        display: none;
+    }
+    header #menu{
+        display: block !important;
+        color: var(--azulOscuro);
+        font-size: 1.5em;
+    }
+
+    #hero{
+        padding: 10em 1em 7em 1em;
+    }
+    #hero h1{
+        font-size: 2.5em;
+    }
+    #hero h5{
+        font-size: 1em;
+    }
+    #hero p{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 1em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    #ubicacion a{
+        margin-top: 3em;
+    }
 }
 
 
