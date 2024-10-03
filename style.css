@@ -62,7 +62,7 @@ h5{
 /* NAVBAR */
 header{
     background: var(--grisClaro);
-    padding: 1.5em 3em;
+    padding: 0.5em 3em;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -222,7 +222,6 @@ footer div a:hover{
     footer{
         padding: 1em;
         padding-top: 3em;
-        padding-bottom: 3em;
     }
     #ubicacion a{
         margin-top: 3em;

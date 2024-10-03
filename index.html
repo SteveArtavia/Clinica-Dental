@@ -15,16 +15,30 @@
 </head>
 <body>
     <header>
-        <nav id='nav'>
-            <p id="logo"><strong>LOGO</strong></p>
-            <i id="menu" class="fas fa-bars" style="display: none;"></i>
-            <ul id="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#" class="agendar-cita main-btn">Solicitar Cita</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>LOGO</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-btn btn btn-primary" href="#">Solicitar Cita</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
     </header>
 
     <section id="hero">
@@ -96,23 +110,14 @@
     <footer class="footer">
         <div class="container">
             <div class="row mx-auto">
-
-                <div class="col-12 col-lg-3 my-3"><strong>LOGO</strong></div>
-
-                <div class="col-12 col-lg-3 my-3">
-                <h5>Contacto</h5>
-                <a href="tel:+50689545745"><i class="fas fa-phone"></i> 8835 3224</a><br>
-                <a href="mailto:dramartinez28@hotmail.com"><i class="fas fa-envelope"></i> dramartinez28@hotmail.com</a><br>
-                <a href="https://wa.me/1234567890?text=Hola%20quiero%20más%20información" class="whatsapp-button" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a><br>
-                </div>
         
-                <div class="col-12 col-lg-3 my-3">
+                <div class="col-12 col-md-4 my-3">
                 <h5>Horario de Atención</h5>
                 <p class="m-0">Lunes - Viernes: 9:00 AM - 6:00 PM</p>
                 <p>Sábado y Domingo: Cerrado</p>
                 </div>
         
-                <div id="enlaces" class="col-12 col-lg-3 my-3">
+                <div id="enlaces" class="col-12 col-md-4 my-3">
                 <h5>Enlaces Útiles</h5>
                     <a href="#">Inicio</a>
                     <a href="#servicios">Servicios</a>
@@ -122,7 +127,14 @@
                     <a href="#footer">Contacto</a>
                 </div>
 
-                <div id="ubicacion" class="text-center">
+                <div class="col-12 col-md-4 my-3">
+                    <h5>Contacto</h5>
+                    <a href="tel:+50689545745"><i class="fas fa-phone"></i> 8835 3224</a><br>
+                    <a href="mailto:dramartinez28@hotmail.com"><i class="fas fa-envelope"></i> dramartinez28@hotmail.com</a><br>
+                    <a href="https://wa.me/1234567890?text=Hola%20quiero%20más%20información" class="whatsapp-button" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a><br>
+                </div>
+
+                <div id="ubicacion" class="text-center mt-5">
                     <a href="https://www.waze.com/en/live-map/directions?latlng=9.9897414%2C-84.1405879" class="light-btn" target="_blank">Ir con waze</a><br>
                 </div>
 
@@ -136,6 +148,7 @@
       </footer>
       
       <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
